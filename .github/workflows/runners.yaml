@@ -6,21 +6,22 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Show OS
+      - name: Show Linux OS
         run: |
           echo "Runner OS: $RUNNER_OS"
-          echo "Label: ${{ runner.label }}"
-          echo "Name: ${{ runner.name }}"
-          echo "ID: ${{ runner.id }}"
-          echo "Group: ${{ runner.group }}"
-          echo "Workspace: ${{ runner.workspace }}"
-          echo "Repository: ${{ runner.repository }}"
-          echo "Path: ${{ runner.path }}"
-          echo "Temp: ${{ runner.temp }}"
-          echo "Tool Cache: ${{ runner.tool_cache }}"
-          echo "OS Architecture: ${{ runner.osArchitecture }}"
-          echo "OS Version: ${{ runner.osVersion }}"
-          echo "Version: ${{ runner.version }}"
-          echo "Server URL: ${{ runner.serverUrl }}"
-          echo "Is Hosted: ${{ runner.isHosted }}"
-          echo "Is Virtual Environment: ${{ runner.virtualEnvironment }}"
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Show Windows OS
+        shell: bash
+        run: |
+          echo "Runner OS: $RUNNER_OS"
+
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - name: Show MacOS OS
+        run: |
+          echo "Runner OS: $RUNNER_OS"
