@@ -6,14 +6,10 @@ jobs:
   job-one:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello Job01
-        run: echo "Hello Job01"
+      - name: Hello Step01
+        run: echo "Hello Step01"
   job-two:
     runs-on: ubuntu-latest
     steps:
-      - name: Exit Job02
-        run: |
-          echo "Exit Job02"
-          exit 1
-      - name: Hello Job01
-        run: echo "Hello Job01"
+      - name: Hello Step02
+        run: echo "Hello Step02"
