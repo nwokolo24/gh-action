@@ -1,6 +1,6 @@
 name: Job01
 
-on: push
+on: workflow_dispatch
 
 jobs:
   job-one:
