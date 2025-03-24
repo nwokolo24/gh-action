@@ -1,6 +1,6 @@
 name: Runners
 
-on: push
+on: workflow_dispatch
 
 jobs:
   ubuntu:
